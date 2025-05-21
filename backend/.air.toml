@@ -1,0 +1,12 @@
+# .air.toml
+
+root = "."
+tmp_dir = "tmp"
+build = "go build -o ./tmp/main ."
+bin = "tmp/main"
+watcher = "fsnotify"
+include_ext = ["go"]
+exclude_dir = ["tmp"]
+
+[log]
+time = true
