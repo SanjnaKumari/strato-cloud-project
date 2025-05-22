@@ -52,10 +52,10 @@ strato-cloud-project/
 
 cd backend
 
-# If not done already
+### If not done already
 go mod init strato-backend
 
-# Run manually
+### Run manually
 go run main.go
 
 # OR run with auto-reload (optional)
