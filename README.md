@@ -4,7 +4,7 @@ A fullstack React + Go application that fetches and displays user account metada
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - ⚛️ **Frontend**: React (CRA)
 - 🖌 **Styling**: Tailwind CSS
@@ -14,7 +14,7 @@ A fullstack React + Go application that fetches and displays user account metada
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 strato-cloud-project/
 ├── backend/ # Go server + API
@@ -32,10 +32,6 @@ strato-cloud-project/
 │ └── package.json
 └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🚀 Setup Instructions
@@ -46,7 +42,7 @@ Edit
 - Node.js (≥18.x)
 - npm or yarn
 - curl (for testing)
-- Optional: [`air`](https://github.com/cosmtrek/air) or [`reflex`](https://github.com/cespare/reflex) for hot reload in backend
+- Optional: [`air`](https://github.com/cosmtrek/air) for hot reload in backend
 
 ---
 
@@ -65,93 +61,57 @@ go run main.go
 
 # OR run with auto-reload (optional)
 air
-# OR
-reflex -r '\.go$' -- sh -c 'go run main.go'
 The server will start on:
-
-bash
-Copy
-Edit
 http://localhost:8080/api/users
-You can test the endpoint with:
 
-bash
-Copy
-Edit
+You can test the endpoint with:
 curl http://localhost:8080/api/users
+
 🔜 Frontend (React + Tailwind)
-bash
-Copy
-Edit
 cd frontend
 npm install
 npm start
 Visit in browser:
-👉 http://localhost:3000
+http://localhost:3000
 
-💡 Features
+Features
 Displays user metadata from backend
 
 Calculates:
-
 ⏱ Days since password change
-
 ⏱ Days since last access
 
 🎨 Color-codes rows:
-
 🔴 Both password and access are stale
-
 🟡 Only password is stale
-
 🔵 Only access is stale
 
 ✅ MFA filter: All, Yes, No
+🔁 Auto-refreshes data every 1 second
 
-🔁 Auto-refreshes data every 10 seconds
-
-🧪 Testing
-✅ Frontend
-bash
-Copy
-Edit
+## Testing
+### Frontend:
 cd frontend
 npm run test
 Tests include:
-
 computeDays logic
-
 MFA filtering
 
-Snapshot rendering of component
-
-✅ Backend
-bash
-Copy
-Edit
+### Backend:
 cd backend
 go test
 Covers:
-
 Status 200 OK from /api/users
-
 Valid JSON structure
-
 Correct user count
 
-🧱 Design & Architecture Notes
+Design & Architecture Notes
 Lightweight Go backend using only the standard library
-
 Frontend consumes REST API with fetch()
-
 Tailwind is used via JIT build (no CDN) for flexibility
-
 Color-coding handled entirely via Tailwind classes
-
 Auto-refresh with setInterval for live updates
-
 Separation of frontend and backend allows for independent deployment
-
-Optional dev tooling (air or reflex) improves DX during iteration
+Optional dev tooling (air) improves DX during iteration
 
 
