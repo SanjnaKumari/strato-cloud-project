@@ -10,7 +10,7 @@ A fullstack React + Go application that fetches and displays user account metada
 - 🖌 **Styling**: Tailwind CSS
 - 🐹 **Backend**: Go (net/http)
 - 🧪 **Testing**: Jest + React Testing Library, `net/http/httptest` (Go)
-- 🔁 **Live reload** (backend): `air` or `reflex`
+- 🔁 **Live reload** (backend): `air` 
 
 ---
 
@@ -28,7 +28,6 @@ strato-cloud-project/
 │ │ └── index.css
 │ ├── public/
 │ ├── tailwind.config.js
-│ ├── postcss.config.js
 │ ├── babel.config.js
 │ └── package.json
 └── README.md
