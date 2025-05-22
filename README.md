@@ -6,11 +6,11 @@ A fullstack React + Go application that fetches and displays user account metada
 
 ## Tech Stack
 
-- ⚛️ **Frontend**: React (CRA)
-- 🖌 **Styling**: Tailwind CSS
-- 🐹 **Backend**: Go (net/http)
-- 🧪 **Testing**: Jest + React Testing Library, `net/http/httptest` (Go)
-- 🔁 **Live reload** (backend): `air` 
+- **Frontend**: React (CRA)
+- **Styling**: Tailwind CSS
+- **Backend**: Go (net/http)
+- **Testing**: Jest + React Testing Library, `net/http/httptest` (Go)
+- **Live reload** (backend): `air` 
 
 ---
 
@@ -50,7 +50,6 @@ strato-cloud-project/
 
 ### Backend (Go API)
 
-```bash
 cd backend
 
 # If not done already
@@ -67,7 +66,7 @@ http://localhost:8080/api/users
 You can test the endpoint with:
 curl http://localhost:8080/api/users
 
-🔜 Frontend (React + Tailwind)
+### Frontend (React + Tailwind)
 cd frontend
 npm install
 npm start
@@ -83,12 +82,12 @@ Calculates:
 ⏱ Days since password change
 ⏱ Days since last access
 
-🎨 Color-codes rows:
+Color-codes rows:
 🔴 Both password and access are stale
 🟡 Only password is stale
 🔵 Only access is stale
 
-✅ MFA filter: All, Yes, No
+MFA filter: All, Yes, No
 🔁 Auto-refreshes data every 1 second
 
 ---
@@ -109,7 +108,9 @@ Status 200 OK from /api/users
 Valid JSON structure
 Correct user count
 
-Design & Architecture Notes
+---
+
+## Design & Architecture Notes
 Lightweight Go backend using only the standard library
 Frontend consumes REST API with fetch()
 Tailwind is used via JIT build (no CDN) for flexibility
