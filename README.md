@@ -14,26 +14,6 @@ A fullstack React + Go application that fetches and displays user account metada
 
 ---
 
-## Directory Structure
-
-strato-cloud-project/
-├── backend/ # Go server + API
-│ ├── main.go
-│ └── main_test.go
-├── frontend/ # React app
-│ ├── src/
-│ │ ├── tests/ # Unit tests
-│ │ ├── App.jsx
-│ │ ├── index.js
-│ │ └── index.css
-│ ├── public/
-│ ├── tailwind.config.js
-│ ├── babel.config.js
-│ └── package.json
-└── README.md
-
----
-
 ## Setup Instructions
 
 ### Prerequisites
@@ -138,8 +118,11 @@ Frontend consumes REST API with fetch()
 Tailwind is used via JIT build (no CDN) for flexibility
 
 Color-coding handled entirely via Tailwind classes
+
 Auto-refresh with setInterval for live updates
+
 Separation of frontend and backend allows for independent deployment
+
 Optional dev tooling (air) improves DX during iteration
 
 
