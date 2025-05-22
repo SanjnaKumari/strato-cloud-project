@@ -64,9 +64,9 @@ Displays user metadata from backend
 
 Calculates:
 
-⏱ Days since password change
+Days since password change
 
-⏱ Days since last access
+Days since last access
 
 Color-codes rows:
 
