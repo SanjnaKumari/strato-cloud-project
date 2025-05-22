@@ -34,9 +34,9 @@ strato-cloud-project/
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
-### 📦 Prerequisites
+### Prerequisites
 
 - Go (≥1.20)
 - Node.js (≥18.x)
@@ -46,9 +46,9 @@ strato-cloud-project/
 
 ---
 
-## ▶️ Running the App Locally
+## Running the App Locally
 
-### 🔙 Backend (Go API)
+### Backend (Go API)
 
 ```bash
 cd backend
@@ -74,7 +74,9 @@ npm start
 Visit in browser:
 http://localhost:3000
 
-Features
+---
+
+### Features
 Displays user metadata from backend
 
 Calculates:
@@ -88,6 +90,8 @@ Calculates:
 
 ✅ MFA filter: All, Yes, No
 🔁 Auto-refreshes data every 1 second
+
+---
 
 ## Testing
 ### Frontend:
