@@ -67,9 +67,13 @@ You can test the endpoint with:
 curl http://localhost:8080/api/users
 
 ### Frontend (React + Tailwind)
+
 cd frontend
+
 npm install
+
 npm start
+
 Visit in browser:
 http://localhost:3000
 
@@ -80,11 +84,14 @@ Displays user metadata from backend
 
 Calculates:
 ⏱ Days since password change
+
 ⏱ Days since last access
 
 Color-codes rows:
 🔴 Both password and access are stale
+
 🟡 Only password is stale
+
 🔵 Only access is stale
 
 MFA filter: All, Yes, No
@@ -95,17 +102,25 @@ MFA filter: All, Yes, No
 ## Testing
 ### Frontend:
 cd frontend
+
 npm run test
+
 Tests include:
+
 computeDays logic
 MFA filtering
 
 ### Backend:
 cd backend
+
 go test
+
 Covers:
+
 Status 200 OK from /api/users
+
 Valid JSON structure
+
 Correct user count
 
 ---
